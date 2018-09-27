@@ -1,7 +1,7 @@
 package cbu527.com.list;
 
-public class QueueDequeueMethods implements ListInterface{
-    QueueNode front,rear;
+public class QueueDequeueMethods<T> implements ListInterface<T>{
+    QueueNode<T> front,rear;
     private int size;
 
     //Default constructor
@@ -11,7 +11,7 @@ public class QueueDequeueMethods implements ListInterface{
         size = 0;
     }
     @Override
-    public void addItem(Object data) {
+    public void addItem(T data) {
         QueueNode temp = new QueueNode(data);
         if(rear == null){
             rear = temp;
@@ -27,7 +27,7 @@ public class QueueDequeueMethods implements ListInterface{
     }
 
     @Override
-    public Object delete() {
+    public T delete() {
         if(front == null){
             System.out.println("Queue is empty");
         }
@@ -35,7 +35,7 @@ public class QueueDequeueMethods implements ListInterface{
         while(current != null){
                current = current.next;
         }
-        return current;
+        return (T)current;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package cbu527.com.list;
 
-public class Set {
+public class Set<T> implements ListInterface<T>{
+
 
     private int[] items = null;
 
@@ -54,6 +55,30 @@ public class Set {
 
         }
         return new Set(newMembers);
+    }
+    @Override
+    public void addItem(T item) {
+
+    }
+
+    @Override
+    public void addItem(int item, int index) {
+
+    }
+
+    @Override
+    public ListNode remove(int index) {
+        return null;
+    }
+
+    @Override
+    public Object delete() {
+        return null;
+    }
+
+    @Override
+    public void print() {
+
     }
 }
 

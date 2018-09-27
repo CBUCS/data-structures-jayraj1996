@@ -1,14 +1,14 @@
 package cbu527.com.list;
 
 
-public class LinkedListMethods implements ListInterface{
+public class LinkedListMethods<T> implements ListInterface<T>{
 
 
-    public ListNode head; //declaration of class
+    public ListNode<T> head; //declaration of class
 
     //this methods is use to add item
     @Override
-    public void addItem(Object item) {
+    public void addItem(T item) {
         ListNode tempItem = new ListNode(item);
         if (head == null) {
             head = tempItem;

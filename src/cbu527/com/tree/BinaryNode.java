@@ -1,6 +1,6 @@
 package cbu527.com.tree;
 
-public class BinaryNode {
+public class BinaryNode<T> {
     BinaryNode right,left,next;
     int data;
 

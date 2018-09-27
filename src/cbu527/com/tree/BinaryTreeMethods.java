@@ -1,6 +1,6 @@
 package cbu527.com.tree;
 
-public class BinaryTreeMethods implements TreeInterface{
+public class BinaryTreeMethods<T> implements TreeInterface<T>{
     BinaryNode root;
     @Override
     public void insert(int data) {

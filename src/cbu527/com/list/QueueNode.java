@@ -1,10 +1,10 @@
 package cbu527.com.list;
 
-public class QueueNode {
+public class QueueNode<T> {
         QueueNode next;
-        Object data;
+        T data;
 
-        public QueueNode(Object data){
+        public QueueNode(T data){
             this.data = data;
         }
 }

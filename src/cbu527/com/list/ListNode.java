@@ -1,7 +1,7 @@
 package cbu527.com.list;
 
 
-    public class ListNode {
+    public class ListNode<T> {
         Object data;
         ListNode next; // refer to next element
 
